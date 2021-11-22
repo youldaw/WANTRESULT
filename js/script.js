@@ -62,6 +62,7 @@ $(function (){
         $(this).toggleClass('active');
         $('.list-drop').toggleClass('active');
     });
+    
     $(document).mouseup(function (e){ // событие клика по веб-документу
         var div = $(".list-drop, .settings-drop, .manager-drop, .sort-drop, .belt-drop, .task-drop, .allTime-drop, .tarif-drop, .crm-tag-block"); // тут указываем class элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
@@ -75,12 +76,23 @@ $(function (){
         e.preventDefault();
         $('.results').addClass('active');
     });
+    
     $(document).mouseup(function (e){ // событие клика по веб-документу
         var div = $(".results"); // тут указываем class элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
             div.removeClass('active'); // скрываем его
         }
+    });
+
+    $('.client-search-group input').on('click',function(e){
+        e.preventDefault();
+        $('.an-results').toggleClass('active');
+        $('.client-find').toggleClass('active');
+    });
+    $('.client-find').on('click',function(e){
+        e.preventDefault();
+        $('.an-results').toggleClass('active');
     });
 
     $(window).scroll(function(){
@@ -155,10 +167,54 @@ $(function (){
         },
         "startDate": true,
         "endDate": "11/15/2021"
-    }, function(start, end, label) {
+    },
+    function(start, end, label) {
       console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
     });
 
+    $('#demo2, #demo3').daterangepicker({
+        "singleDatePicker": false,
+        "autoApply": true,
+        "locale": {
+            "format": "DD.MM.YYYY",
+            "separator": " - ",
+            "applyLabel": "Apply",
+            "cancelLabel": "Cancel",
+            "fromLabel": "From",
+            "toLabel": "To",
+            "customRangeLabel": "Custom",
+            "weekLabel": "W",
+            "daysOfWeek": [
+                "Вс",
+                "Пн",
+                "Вт",
+                "Ср",
+                "Чт",
+                "Пт",
+                "Сб"
+            ],
+            "monthNames": [
+                "Январь",
+                "Февраль",
+                "Март",
+                "Апрель",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Август",
+                "Сентябрь",
+                "Октябрь",
+                "Ноябрь",
+                "Декабрь"
+            ],
+            "firstDay": 1
+        },
+        "startDate": true,
+        "endDate": true
+    },
+    function(start, end, label) {
+      console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+    });
 
+    
 });
-

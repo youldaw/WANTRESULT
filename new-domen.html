@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="libs/css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="libs/css/bootstrap-theme.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/daterangepicker.css" media="screen">
+		<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=480"> -->
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+<body>
+	
+	<div class="wrapper profil-page">
+
+		<div class="left-menu minimized">
+			<div class="brand">
+				<a href="#"><span class="side-link"><img src="images/logo-text.png" alt=""></span></a>
+			</div>
+			<nav class="left-nav">
+				<ul>
+					<li class="side-dashboard">
+						<a href="#!">
+							
+							<span class="side-icon mytooltip">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13 21V11H21V21H13ZM3 13V3H11V13H3ZM9 11V5H5V11H9ZM3 21V15H11V21H3ZM5 19H9V17H5V19ZM15 19H19V13H15V19ZM13 3H21V9H13V3ZM15 5V7H19V5H15Z" fill="#59597B"/>
+								</svg>
+
+								<span class="tooltiptext">Dashboard</span>
+							</span>
+							<span class="side-link">Dashboard</span>
+						</a>
+					</li>
+					<li class="side-visitor">
+						<a href="#!">
+							<span class="side-icon mytooltip">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 3C6.23858 3 4 5.23858 4 8C4 10.7614 6.23858 13 9 13C11.7614 13 14 10.7614 14 8C14 5.23858 11.7614 3 9 3ZM6 8C6 6.34315 7.34315 5 9 5C10.6569 5 12 6.34315 12 8C12 9.65685 10.6569 11 9 11C7.34315 11 6 9.65685 6 8Z" fill="#59597B"/>
+									<path d="M16.9084 8.21828C16.6271 8.07484 16.3158 8.00006 16 8.00006V6.00006C16.6316 6.00006 17.2542 6.14956 17.8169 6.43645C17.8789 6.46805 17.9399 6.50121 18 6.5359C18.4854 6.81614 18.9072 7.19569 19.2373 7.65055C19.6083 8.16172 19.8529 8.75347 19.9512 9.37737C20.0496 10.0013 19.9987 10.6396 19.8029 11.2401C19.6071 11.8405 19.2719 12.3861 18.8247 12.8321C18.3775 13.2782 17.8311 13.6119 17.2301 13.8062C16.6953 13.979 16.1308 14.037 15.5735 13.9772C15.5046 13.9698 15.4357 13.9606 15.367 13.9496C14.7438 13.8497 14.1531 13.6038 13.6431 13.2319L13.6421 13.2311L14.821 11.6156C15.0761 11.8017 15.3717 11.9248 15.6835 11.9747C15.9953 12.0247 16.3145 12.0001 16.615 11.903C16.9155 11.8059 17.1887 11.639 17.4123 11.416C17.6359 11.193 17.8035 10.9202 17.9014 10.62C17.9993 10.3198 18.0247 10.0006 17.9756 9.68869C17.9264 9.37675 17.8041 9.08089 17.6186 8.82531C17.4331 8.56974 17.1898 8.36172 16.9084 8.21828Z" fill="#59597B"/>
+									<path d="M19.9981 21C19.9981 20.475 19.8947 19.9551 19.6938 19.47C19.4928 18.9849 19.1983 18.5442 18.8271 18.1729C18.4558 17.8017 18.0151 17.5072 17.53 17.3062C17.0449 17.1053 16.525 17.0019 16 17.0019V15C16.6821 15 17.3584 15.1163 18 15.3431C18.0996 15.3783 18.1983 15.4162 18.2961 15.4567C19.0241 15.7583 19.6855 16.2002 20.2426 16.7574C20.7998 17.3145 21.2417 17.9759 21.5433 18.7039C21.5838 18.8017 21.6217 18.9004 21.6569 19C21.8837 19.6416 22 20.3179 22 21H19.9981Z" fill="#59597B"/>
+									<path d="M16 21H14C14 18.2386 11.7614 16 9 16C6.23858 16 4 18.2386 4 21H2C2 17.134 5.13401 14 9 14C12.866 14 16 17.134 16 21Z" fill="#59597B"/>
+								</svg>
+								<span class="tooltiptext">Посетители</span>
+							</span>
+							<span class="side-link">Посетители</span>
+						</a>
+					</li>
+					<li class="side-crm">
+						<a href="#!">
+							<span class="side-icon mytooltip">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.16098 4.46901C4.32105 3.30874 5.87698 2.6301 7.51658 2.56926C9.15618 2.50843 10.7581 3.0699 12.001 4.14101C13.2427 3.07168 14.8426 2.51084 16.4802 2.57077C18.1178 2.6307 19.6724 3.30698 20.8327 4.46422C21.9929 5.62145 22.6733 7.17424 22.7375 8.8117C22.8017 10.4492 22.2451 12.0505 21.179 13.295L13.414 21.085C13.0572 21.4419 12.5788 21.6507 12.0745 21.6696C11.5702 21.6886 11.0775 21.5162 10.695 21.187L10.585 21.086L2.82098 13.295C1.75547 12.0515 1.19856 10.4517 1.2616 8.81539C1.32463 7.17907 2.00297 5.62683 3.16098 4.46901ZM4.57498 5.88301C3.75722 6.701 3.28583 7.80245 3.25865 8.95878C3.23146 10.1151 3.65057 11.2375 4.42898 12.093L4.57498 12.247L12 19.672L17.303 14.368L13.768 10.833L12.708 11.893C12.4294 12.1717 12.0988 12.3928 11.7348 12.5436C11.3708 12.6945 10.9807 12.7722 10.5867 12.7723C9.79097 12.7725 9.02777 12.4565 8.46498 11.894C7.90219 11.3315 7.58591 10.5684 7.58573 9.77272C7.58554 8.977 7.90146 8.2138 8.46398 7.65101L10.566 5.54801C9.72945 4.88039 8.68239 4.5327 7.61267 4.56734C6.54294 4.60198 5.52057 5.01667 4.72898 5.73701L4.57498 5.88301ZM13.061 8.71101C13.2485 8.52354 13.5028 8.41823 13.768 8.41823C14.0331 8.41823 14.2875 8.52354 14.475 8.71101L18.717 12.953L19.425 12.247C20.2564 11.4161 20.7298 10.2929 20.7438 9.11757C20.7578 7.94222 20.3114 6.80803 19.5 5.95757C18.6886 5.1071 17.5766 4.60788 16.4019 4.56667C15.2272 4.52545 14.083 4.94551 13.214 5.73701L13.061 5.88301L9.87898 9.06501C9.70565 9.23823 9.60196 9.46905 9.58758 9.71368C9.5732 9.9583 9.64914 10.1997 9.80098 10.392L9.87898 10.479C10.0522 10.6523 10.283 10.756 10.5276 10.7704C10.7723 10.7848 11.0137 10.7089 11.206 10.557L11.293 10.479L13.061 8.71101Z" fill="#1ECBBD"/>
+								</svg>
+								<span class="tooltiptext">CRM</span>
+							</span>
+							<span class="side-link">CRM</span>
+						</a>
+					</li>
+					<li class="side-analitica">
+						<a href="#!">
+							<span class="side-icon mytooltip">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 0.543C11.33 0.514 11.663 0.5 12 0.5C18.351 0.5 23.5 5.649 23.5 12C23.5 12.337 23.486 12.67 23.457 13H21.951C21.449 18.053 17.185 22 12 22C6.477 22 2 17.523 2 12C2 6.815 5.947 2.551 11 2.05V0.542V0.543ZM11 13V4.062C8.98271 4.31868 7.13885 5.33387 5.84319 6.90122C4.54752 8.46857 3.89728 10.4705 4.02462 12.5C4.15196 14.5296 5.04733 16.4345 6.52874 17.8276C8.01016 19.2207 9.96645 19.9975 12 20C13.9486 20 15.8302 19.2888 17.2917 18C18.7533 16.7112 19.6942 14.9333 19.938 13H11ZM21.448 11C21.2187 8.8379 20.255 6.81979 18.7176 5.28239C17.1802 3.74498 15.1621 2.78126 13 2.552V11H21.448Z" fill="#59597B"/>
+								</svg>
+								<span class="tooltiptext">Аналитика</span>
+							</span>
+							<span class="side-link">Аналитика</span>
+						</a>
+					</li>
+					<li class="side-tel">
+						<a href="#!">
+							<span class="side-icon mytooltip">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.366 10.682C10.3043 12.3305 11.6695 13.6957 13.318 14.634L14.202 13.396C14.3442 13.1969 14.5544 13.0569 14.7928 13.0023C15.0313 12.9478 15.2814 12.9825 15.496 13.1C16.9103 13.8729 18.4722 14.3378 20.079 14.464C20.3298 14.4839 20.5638 14.5975 20.7345 14.7823C20.9052 14.9671 21 15.2094 21 15.461V19.923C21.0001 20.1706 20.9083 20.4094 20.7424 20.5932C20.5765 20.777 20.3483 20.8927 20.102 20.918C19.572 20.973 19.038 21 18.5 21C9.94 21 3 14.06 3 5.5C3 4.962 3.027 4.428 3.082 3.898C3.10725 3.6517 3.22298 3.42352 3.40679 3.25763C3.5906 3.09175 3.82941 2.99995 4.077 3H8.539C8.79056 2.99997 9.0329 3.09475 9.21768 3.26545C9.40247 3.43615 9.51613 3.67022 9.536 3.921C9.66222 5.52779 10.1271 7.08968 10.9 8.504C11.0175 8.71856 11.0522 8.96874 10.9977 9.2072C10.9431 9.44565 10.8031 9.65584 10.604 9.798L9.366 10.682V10.682ZM6.844 10.025L8.744 8.668C8.20478 7.50409 7.83535 6.26884 7.647 5H5.01C5.004 5.166 5.001 5.333 5.001 5.5C5 12.956 11.044 19 18.5 19C18.667 19 18.834 18.997 19 18.99V16.353C17.7312 16.1646 16.4959 15.7952 15.332 15.256L13.975 17.156C13.4287 16.9437 12.898 16.6931 12.387 16.406L12.329 16.373C10.3676 15.2567 8.74328 13.6324 7.627 11.671L7.594 11.613C7.30691 11.102 7.05628 10.5713 6.844 10.025V10.025Z" fill="#59597B"/>
+								</svg>
+								<span class="tooltiptext">Телефония</span>
+							</span>
+							<span class="side-link">Телефония</span>
+						</a>
+					</li>
+					<li class="gap"></li>
+					<li class="side-user"><a href="#!"><img src="images/user-icon.svg" alt=""> <span class="side-link">Пользователь</span></a></li>
+					<li class="side-domen"><a href="#!"><img src="images/domen-icon.svg" alt=""> <span class="side-link">Новый домен</span></a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="crm-top">
+							<div class="crm-top-left">
+								<div class="crm-menu-btn">
+									<a href="#!">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<a href="#" class="mob mob-logo">
+									<span class="side-link">
+										<img src="images/logo-text.png" alt="">
+									</span>
+								</a>
+								<a href="#!" class="crm-clock">
+									<h3>15:02</h3>
+									<span>+12</span>
+								</a>
+							</div>
+
+							<div class="crm-top-right">
+								<div class="crm-tarif">
+									<span class="rub"><img src="images/rub-icon.svg" alt=""></span>
+									<div class="tarif-drop drop-block">
+										<button class="tarif-btn" type="button">
+											Безлимит  <img src="images/drop-arrow.svg" alt="">
+										</button>
+										<ul class="tarif-menu drop-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="crm-info">
+									<a href="#!"><img src="images/info-icon.svg" alt=""></a>
+								</div>
+								<div class="crm-notif">
+									<a href="#!"><img src="images/notif-icon.svg" alt=""></a>
+								</div>
+								<div class="crm-avatar">
+									<a href="#!"><img src="images/avatar-mini-img.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="domen-sec">
+            <div class="container">
+                <div class="row domen-rov">
+                    <div class="col-lg-10">
+						<form action="#!" id="domen-form">
+							<div class="domen-block">
+								<div class="domen-top">
+									<h1>Создать домен</h1>
+									<p><img src="images/domen-icon.svg" alt=""></p>
+								</div>
+								<div class="domen-head">
+									<div class="row">
+										<div class="col-lg-4">
+											<div class="form-group">
+												<label for="domenName">Домен*</label>
+												<input type="text" id="domentName" class="form-input" placeholder="Example.com" required>
+											</div>
+										</div>
+										<div class="col-lg-5">
+											<div class="form-group">
+												<label for="domenCreate">Создал(а)</label>
+												<div class="btn-group">
+													<button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														@aleksandr.petrov2(aleksandr.petrov2) <img src="images/drop-arrow.svg" alt="">
+													</button>
+													<ul class="dropdown-menu">
+													  <li><a href="#">@aleksandr.petrov2</a></li>
+													  <li><a href="#">@aleksandr.petrov2 3</a></li>
+													  <li><a href="#">@aleksandr.petrov2 4</a></li>
+													  <li><a href="#">@aleksandr.petrov2 5</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<label for="domenRadio">Статус</label>
+											<div class="switch-block">
+												<label class="switch" for="change-text">
+													<input type="checkbox" class="switch" id="change-text">
+													<div class="slider round"></div>
+													<span id="dynamic-text">Неактивный</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="domen-body">
+									<div class="form-group">
+										<p>Пиксель</p>
+										<textarea id="codesample" placeholder='<!-- Pixel -->
+	
+	<script type="text/javascript">
+	
+		(function (d, w) {
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://qoopler.ru/index.php?ref="+d.referrer+"&page=" + encodeURIComponent(w.location.href);
+				n.parentNode.insertBefore(s, n);
+		})(document, window);
+	
+	</script>
+	
+	<!-- /Pixel -->'></textarea>
+									</div>
+									<div class="form-group sendPixel d-flex">
+										<div class="f-in">
+											<label for="domenName">Отправка пикселя</label>
+											<input type="email" id="domentName" class="form-input" placeholder="coach@yandex.ru">
+										</div>
+										<button type="submit">Отправить</button>
+									</div>
+									<div class="form-group">
+										<span>Отправьте инструкцию по установке пикселя на email своему программисту</span>
+									</div>
+								</div>
+								<div class="domen-ftr">
+									<div class="check">
+										<label class="control control--checkbox">
+											<input type="checkbox"/>
+											<div class="control__indicator"></div>
+											<span>Виджет согласия на обработку персональных данных</span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label for="cookieText">Текст куки</label>
+										<input type="text" id="cookieText" class="form-input for-ph" placeholder="Мы используем файлы cookie. Продолжив использование сайта, вы соглашаетесь с...">
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label for="polcyText">Текст политики конфиденциальности</label>
+												<input type="text" id="polcyText" class="form-input for-ph" placeholder="Privacy Privacy policy">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label for="policyLink">Ссылка на политику конфиденциальности</label>
+												<input type="text" id="policyLink" class="form-input for-ph" placeholder="Policy url: https://example.ru/privacy.php">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="domen-region">
+									<div class="form-group">
+										<label for="domenRegion">Регионы</label>
+										<input type="text" id="domenRegion" class="form-input for-ph domen-input" placeholder="Выберите регион">
+									</div>
+									<div class="row">
+										<div class="col-lg-10">
+											<div class="form-group">
+												<label for="roistatKey">Roistat ключ</label>
+												<input type="text" id="roistatKey" class="form-input for-ph" placeholder="Roistat ключ">
+											</div>
+										</div>
+										<div class="col-lg-2">
+											<div class="form-group">
+												<label for="setDelay">Задержка</label>
+												<div class="count">
+													<span class="minus">-</span>
+													<input type='number' min='0' max='1000' step='1' value='0'>
+													<div class="sec">сек</div>
+													<span class="plus">+</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 domen-btn">
+											<button type="submit" class="blue-btn" id="domen-creat-btn">Создать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="libs/js/bootstrap.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
