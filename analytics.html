@@ -187,7 +187,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="analytics-table">
+                                        <div class="analytics-table table-responsive">
                                             <table class="table">
                                                 <thead>
                                                   <tr>
@@ -492,6 +492,50 @@
                                                   </tr>
                                                 </tbody>
                                             </table>
+
+                                            <div class="crm-pagninton">
+                                                <div class="crm-pagninton-left">
+                                                    <ul class="pagination">
+                                                        <li class="page-item p-prev">
+                                                            <a class="page-link" href="#" aria-label="Previous">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.2881 16L18.2981 22.01L19.7121 20.596L15.1121 15.996L19.7121 11.396L18.2981 9.98999L12.2881 16Z" fill="#06061D"/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link pagination__active" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                        <li class="page-item pc"><a class="page-link" href="#">13</a></li>
+                                                        <li class="page-item pc"><a class="page-link" href="#">14</a></li>
+                                                        <li class="page-item p-next">
+                                                            <a class="page-link" href="#" aria-label="Next">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M19.7131 16L13.7021 9.98999L12.2881 11.404L16.8881 16.004L12.2881 20.597L13.7021 22.011L19.7131 16Z" fill="#06061D"/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="crm-pagninton-right">
+                                                    <p>Показаны записи 1-10 из 406</p>
+                                                    <span>На странице</span>
+                                                    <div class="dropup">
+                                                        <button class="pag-btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            20 <img src="images/drop-arrow.svg" alt="">
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                            <li><a href="#">20</a></li>
+                                                            <li><a href="#">15</a></li>
+                                                            <li><a href="#">10</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -508,11 +552,11 @@
                                                 </div>
                                                 <ul class="an-results">
                                                     <div class="an-calendar">
-                                                        <div class="col-lg-7 form-group client-drop">
+                                                        <div class="col-lg-7 col-sm-12 form-group client-drop">
                                                             <p>Дата последней идентификации: </p>
                                                             <input type="text" class="form-control" id="demo3" value="">
                                                         </div>
-                                                        <div class="col-lg-5 an-rate">
+                                                        <div class="col-lg-5 col-sm-12 an-rate">
                                                             <p>Тариф:</p>
                                                             <div class="rate-input">
                                                                 <div class="form-group">
@@ -567,7 +611,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="client-table">
+                                    <div class="client-table table-responsive">
                                         <table class="table">
                                             <thead>
                                               <tr>
@@ -599,36 +643,1294 @@
                                             </thead>
                                             <tbody>
                                               <tr>
-                                                <td class="site-id">
-                                                    <a href="#!">23603</a>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
                                                 </td>
-                                                <td class="site-report">
-                                                    <a href="#!">Аналитика сайтов с 2021-09-13 по 2021-09-13</a>
+                                                <td class="client-user">
+                                                    <a href="#myModal" data-toggle="modal">#64902 @test.client11.test.client11</a>
                                                 </td>
-                                                <td class="site-date">
-                                                    <p>28 мар, 2021</p>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
                                                 </td>
-                                                <td class="site-time">
-                                                    <p>3 сек</p>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
                                                 </td>
-                                                <td class="site-status">
-                                                    <span>Обработан</span>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
                                                 </td>
-                                                <td class="site-delete">
-                                                    <a href="#!">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 22H7C5.89543 22 5 21.1046 5 20V7H3V5H7V4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V5H21V7H19V20C19 21.1046 18.1046 22 17 22ZM7 7V20H17V7H7ZM9 4V5H15V4H9Z" fill="#A0A0B4"/>
-                                                        </svg>                                                                
-                                                    </a>
+                                                <td class="client-balance">
+                                                    <p>2700 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>На удержании</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>Опубликован</p>
+                                                </td>
+                                                <td class="client-status new">
+                                                    <span>Новый</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>Опубликован</p>
+                                                </td>
+                                                <td class="client-status in-work">
+                                                    <span>В работе</span>
+                                                </td>
+                                              </tr>
+
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>500 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>Опубликован</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>18 000 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>Корзина</p>
+                                                </td>
+                                                <td class="client-status deal-closed">
+                                                    <span>Сделка закрыта</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>50 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>Будущее</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
+                                                </td>
+                                              </tr>
+
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>На удержании</p>
+                                                </td>
+                                                <td class="client-status in-work">
+                                                    <span>В работе</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>Опубликован</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>Опубликован</p>
+                                                </td>
+                                                <td class="client-status deal-closed">
+                                                    <span>Сделка закрыта</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>Опубликован</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>На удержании</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>На удержании</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>На удержании</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="client-more">
+                                                    <a href="#!"><img src="images/cool-icon.svg" alt=""></a>
+                                                </td>
+                                                <td class="client-user">
+                                                    <a href="#!">#64902 @test.client11.test.client11</a>
+                                                </td>
+                                                <td class="clieant-date-reg">
+                                                    <p>28 янв, 2021</p>
+                                                </td>
+                                                <td class="client-sites">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-profit">
+                                                    <a href="#!">12</a>
+                                                </td>
+                                                <td class="client-balance">
+                                                    <p>0 ₽</p>
+                                                </td>
+                                                <td class="client-condition">
+                                                    <p>На удержании</p>
+                                                </td>
+                                                <td class="client-status talk">
+                                                    <span>Переговоры</span>
                                                 </td>
                                               </tr>
                                             </tbody>
                                         </table>
+
+                                        <div class="crm-pagninton">
+                                            <div class="crm-pagninton-left">
+                                                <ul class="pagination">
+                                                    <li class="page-item p-prev">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.2881 16L18.2981 22.01L19.7121 20.596L15.1121 15.996L19.7121 11.396L18.2981 9.98999L12.2881 16Z" fill="#06061D"/>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link pagination__active" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                    <li class="page-item pc"><a class="page-link" href="#">13</a></li>
+                                                    <li class="page-item pc"><a class="page-link" href="#">14</a></li>
+                                                    <li class="page-item p-next">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M19.7131 16L13.7021 9.98999L12.2881 11.404L16.8881 16.004L12.2881 20.597L13.7021 22.011L19.7131 16Z" fill="#06061D"/>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="crm-pagninton-right">
+                                                <p>Показаны записи 1-10 из 406</p>
+                                                <span>На странице</span>
+                                                <div class="dropup">
+                                                    <button class="pag-btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        20 <img src="images/drop-arrow.svg" alt="">
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                        <li><a href="#">20</a></li>
+                                                        <li><a href="#">15</a></li>
+                                                        <li><a href="#">10</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="parser" role="tabpanel" aria-labelledby="parser-tab">Парсер</div>
+                                <div class="tab-pane fade parser-tab" id="parser" role="tabpanel" aria-labelledby="parser-tab">
+                                    <div class="tab-top">
+                                        <div class="secondary-title">
+                                            <h3>Клиенты</h3>
+                                        </div>
+                                        <div class="top-right">
+                                            <a data-toggle="modal" href="#myModal2" class="blue-btn">
+                                                <span>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#fff"/>
+                                                    </svg>
+                                                </span> 
+                                                Добавить
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="parser-table table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">
+                                                    <a href="#!">ID</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Наименование</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Дата</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Запрос</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Регион</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Поиск</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Статус</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Объявлений</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Сделки</a>
+                                                </th>
+                                                <th scope="col">
+                                                    <a href="#!">Скачать</a>
+                                                </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="parser-id">
+                                                        <p>234789</p>
+                                                    </td>
+                                                    <td class="parser-test">
+                                                        <p>Test</p>
+                                                    </td>
+                                                    <td class="parser-date">
+                                                        <p>28 янв, 2021</p>
+                                                    </td>
+                                                    <td class="parser-request">
+                                                        <p>купить телефон</p>
+                                                    </td>
+                                                    <td class="parser-region">
+                                                        <p>Санкт-Петербург</p>
+                                                    </td>
+                                                    <td class="cparser-reklama">
+                                                        <p>Яндекс реклама, Google</p>
+                                                    </td>
+                                                    <td class="parser-status">
+                                                        <p>Готово</p>
+                                                    </td>
+                                                    <td class="parser-notice">
+                                                        <a href="#!">124</a>
+                                                    </td>
+                                                    <td class="parser-dealings">
+                                                        <p>124</p>
+                                                    </td>
+                                                    <td class="parser-download">
+                                                        <a href="#!">CSV</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="crm-pagninton">
+                                            <div class="crm-pagninton-left">
+                                                <ul class="pagination">
+                                                    <li class="page-item p-prev">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.2881 16L18.2981 22.01L19.7121 20.596L15.1121 15.996L19.7121 11.396L18.2981 9.98999L12.2881 16Z" fill="#06061D"/>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link pagination__active" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                    <li class="page-item pc"><a class="page-link" href="#">13</a></li>
+                                                    <li class="page-item pc"><a class="page-link" href="#">14</a></li>
+                                                    <li class="page-item p-next">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M19.7131 16L13.7021 9.98999L12.2881 11.404L16.8881 16.004L12.2881 20.597L13.7021 22.011L19.7131 16Z" fill="#06061D"/>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="crm-pagninton-right">
+                                                <p>Показаны записи 1-10 из 406</p>
+                                                <span>На странице</span>
+                                                <div class="dropup">
+                                                    <button class="pag-btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        20 <img src="images/drop-arrow.svg" alt="">
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                        <li><a href="#">20</a></li>
+                                                        <li><a href="#">15</a></li>
+                                                        <li><a href="#">10</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="tab-pane fade" id="top-product" role="tabpanel" aria-labelledby="top-product-tab">Топовые категории</div>
-                                <div class="tab-pane fade" id="trades" role="tabpanel" aria-labelledby="trades-tab">Открепления сделок</div>
+
+                                <div class="tab-pane fade unpinning-tab" id="trades" role="tabpanel" aria-labelledby="trades-tab">
+                                    <div class="transaction-tab">
+                                        <div class="tab-top">
+                                            <div class="secondary-title">
+                                                <h3>История открепления сделок</h3>
+                                            </div>
+                                            <div class="top-right">
+                                                <div class="form-group">
+                                                    <input type="search" class="form-control for-ph" placeholder="Поиск">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unpinning-table table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">
+                                                        <a href="#!">ID</a>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <a href="#!">Домен</a>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <a href="#!">Причина</a>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <a href="#!">Дата</a>
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="unp-id">
+                                                            <p>234789</p>
+                                                        </td>
+                                                        <td class="unp-site">
+                                                            <p>avtovokzal-tomsk.ru</p>
+                                                        </td>
+                                                        <td class="unp-cause">
+                                                            <p>Откреплена, т.к. статус 'база' не изменен более 10 дней</p>
+                                                        </td>
+                                                        <td class="unp-time">
+                                                            <p>28 янв, 2021</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="crm-pagninton">
+                                                <div class="crm-pagninton-left">
+                                                    <ul class="pagination">
+                                                        <li class="page-item p-prev">
+                                                            <a class="page-link" href="#" aria-label="Previous">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.2881 16L18.2981 22.01L19.7121 20.596L15.1121 15.996L19.7121 11.396L18.2981 9.98999L12.2881 16Z" fill="#06061D"/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link pagination__active" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                                        <li class="page-item pc"><a class="page-link" href="#">13</a></li>
+                                                        <li class="page-item pc"><a class="page-link" href="#">14</a></li>
+                                                        <li class="page-item p-next">
+                                                            <a class="page-link" href="#" aria-label="Next">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M19.7131 16L13.7021 9.98999L12.2881 11.404L16.8881 16.004L12.2881 20.597L13.7021 22.011L19.7131 16Z" fill="#06061D"/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="crm-pagninton-right">
+                                                    <p>Показаны записи 1-10 из 406</p>
+                                                    <span>На странице</span>
+                                                    <div class="dropup">
+                                                        <button class="pag-btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            20 <img src="images/drop-arrow.svg" alt="">
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                            <li><a href="#">20</a></li>
+                                                            <li><a href="#">15</a></li>
+                                                            <li><a href="#">10</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -636,8 +1938,115 @@
             </div>
         </section>
 		
-		
 	</div>
+
+    <!-- Button trigger modal -->
+    <!-- <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a> -->
+
+    <!-- Modal Аналитика ПОЛЬЗОВАТЕЛЬ САЙТЫ-->
+    <div class="modal fade user-sites-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Список сайтов пользователя Тест12231 Иван</h3>
+            </div>
+            <div class="modal-body">
+                <table class="modal-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Домен</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>158602</td>
+                            <td>truedomain1.ru</td>
+                        </tr>
+                        <tr>
+                            <td>158602</td>
+                            <td>truedomain1.ru</td>
+                        </tr>
+                        <tr>
+                            <td>158602</td>
+                            <td>truedomain1.ru</td>
+                        </tr>
+                        <tr>
+                            <td>158602</td>
+                            <td>truedomain1.ru</td>
+                        </tr>
+                        <tr>
+                            <td>158602</td>
+                            <td>truedomain1.ru</td>
+                        </tr>
+                        <tr>
+                            <td>158602</td>
+                            <td>truedomain1.ru</td>
+                        </tr>
+                        <tr>
+                            <td>158602</td>
+                            <td>truedomain1.ru</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Modal Аналитика ПОЛЬЗОВАТЕЛЬ САЙТЫ-->
+    <div class="modal fade parser-modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Добавить запрос</h3>
+            </div>
+            <div class="modal-body">
+                <form action="#!" id="parser-form-id">
+                    <div class="form-group">
+                        <input type="text" name="parser-name" id="parser-name" class="for-ph" placeholder="Наименование">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="parser-request" id="parser-request" class="for-ph" placeholder="Запрос">
+                    </div>
+                    <div class="btn-group form-group parser-region-btn">
+                        <button type="button" class="dropdown-toggle for-ph" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Регион <img src="images/drop-arrow.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Регион 2</a></li>
+                            <li><a href="#">Регион 3</a></li>
+                            <li><a href="#">Регион 4</a></li>
+                            <li><a href="#">Регион 5</a></li>
+                        </ul>
+                    </div>
+                    <div class="parser-checks">
+                        <p>Поисковая система</p>
+                        <div class="check">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" checked />
+                                <div class="control__indicator"></div>
+                                <span>Яндекс реклама</span>
+                            </label>
+                        </div>
+                        <div class="check">
+                            <label class="control control--checkbox">
+                                <input type="checkbox"/>
+                                <div class="control__indicator"></div>
+                                <span>Google</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="parser-btn">
+                        <button type="submit" id="parser-send" class="blue-btn">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="libs/js/bootstrap.min.js"></script>

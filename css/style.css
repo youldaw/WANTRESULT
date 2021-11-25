@@ -462,7 +462,9 @@ header .crm-avatar a {
 .crm-main .crm-head .results li.search-items {
 	position: relative;
 }
-
+.form-control:focus{
+	box-shadow: none;
+}
 .head-right-search .hs-form {
     position: relative;
     width: 600px;
@@ -678,9 +680,11 @@ header .crm-avatar a {
 .crm-table {
 	background-color: #fff;
 }
-.table-responsive {
-	overflow-x: scroll;
+.crm-table .table-responsive {
 	margin-bottom: 56px;
+}
+.table-responsive {
+	overflow-x: auto;
 }
 .table {
 	margin-bottom: 0;
@@ -869,16 +873,16 @@ header .crm-avatar a {
 	background-color: transparent;
 }
 /* ======================== scroll bar ======================= */
-
+.table-responsive::-webkit-scrollbar-track,
 #style-2::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #DDDDE9;
 }
-
+.table-responsive::-webkit-scrollbar,
 #style-2::-webkit-scrollbar{
 	height: 8px;
 }
-
+.table-responsive::-webkit-scrollbar-thumb,
 #style-2::-webkit-scrollbar-thumb{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #1ECBBD;
@@ -2119,11 +2123,19 @@ audio::-webkit-media-controls-play-button:hover {
 	background-image: url('../images/calendar-icon.svg');
     background-position: center right 10px;
     background-repeat: no-repeat;
+	width: 300px;
 }
 .analytics-sec .analytics-table {
+	overflow-x: auto;
 	padding: 0 10px;
 }
-.analytics-sec .analytics-table thead {
+.analytics-sec .analytics-table .table {
+	margin-bottom: 56px;
+}
+.analytics-sec .parser-table .table {
+	margin-bottom: 56px;
+}
+.analytics-sec .table thead {
 	border-top: 1px solid #F2F3FB;
 }
 .analytics-sec .analytics-table tbody tr td a,
@@ -2445,29 +2457,433 @@ audio::-webkit-media-controls-play-button:hover {
 	padding-left: 0;
 	padding-right: 0;
 }
+.analytics-sec .an-form .client-drop input {
+	background-image: url('../images/calendar-icon.svg');
+	background-position: center right 10px;
+	background-repeat: no-repeat;
+}
 .analytics-sec .an-form .an-rate {
 	padding-right: 0;
 	padding-left: 20px;
 }
+/* //////////// */
+.analytics-sec .client-table {
+	overflow-x: auto;
+	padding: 0 10px;
+	margin-bottom: 56px;
+}
+.parser-table tbody tr td,
+.client-table tbody tr td {
+	white-space: nowrap;
+}
+.analytics-sec .client-table tbody tr .client-more a {
+	padding: 0 10px;
+}
+.analytics-sec .client-table tbody tr td a,
+.analytics-sec .client-table tbody tr td p {
+	font-size: 14px;
+	line-height: 20px;
+}
+.analytics-sec .client-table tbody tr td p {
+	color: #06061D;
+}
+.analytics-sec .client-table tbody tr td a {
+	color: #0035BC;
+}
+.analytics-sec .client-table tbody tr .client-status span {
+	display: inline-block;
+	font-family: 'IBM Plex Sans';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 7px 8px;
+	border-radius: 4px;
+}
 
+.talk span {
+	color: #2F58E8;
+	background: #F0F4FF;
+}
+.new span {
+	color: #00B9AE;
+	background: #E4FFFF;
+}
+.in-work span {
+	color: #AA28E8;
+	background: #F8ECFF;
+}
+.deal-closed span {
+	color: #E8233A;
+	background: #FFF0F1;
+}
+/* Modal analytics */
+.user-sites-modal .modal-dialog {
+	width: 956px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modal-header {
+	padding: 32px 28px 20px;
+}
+.modal-header h3 {
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+	color: #06061D;
+}
+.modal-body {
+	padding: 0 12px 28px 12px;
+	overflow: hidden;
+}
+.user-sites-modal .modal-table {
+	width: 100%;
+}
+.user-sites-modal .modal-table thead>tr>th {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #B6B7C6;
+	padding: 12px 16px;
+}
+.user-sites-modal .modal-table tbody>tr>td {
+	padding: 16px;
+}
+.user-sites-modal .modal-table tbody>tr {
+	position: relative;
+}
+.user-sites-modal .modal-table tbody>tr:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -3%;
+	width: 107%;
+	height: 1px;
+	background: #F2F3FB;
+}
+/* ////////////////////// */
+/* ================ Аналитика Client card page ================= */
+.wrapper.show .client-card {
+	padding-left: 224px;
+}
+.client-card {
+	transition: .5s all ease;
+	padding-bottom: 20px;
+	padding-left: 86px;
+}
+.client-card .client-card-info,
+.client-card .client-money,
+.client-card .client-profile {
+	background: #FFFFFF;
+	border-radius: 4px;
+	padding: 24px 24px 8px;
+	margin-bottom: 8px;
+}
+.client-card .client-profile .client-img {
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+}
+.client-card .client-profile .client-img span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	margin-right: 20px;
+	border-radius: 50%;
+	background: #AA28E8;
+}
+.client-card .client-profile .client-tel .client-tel-drop {
+	margin-left: auto;
+}
+.client-card .client-card-info .info-info,
+.client-card .client-money .money-info,
+.client-card .client-profile .left-info {
+	border-top: 1px solid #DCE1E8;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 16px 0;
+}
+.client-card .client-card-info .info-info span,
+.client-card .client-money .money-info span,
+.client-card .client-profile .left-info span {
+	min-width: 210px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	color: #7E7F91;
+}
+.client-card .client-card-info .info-info p,
+.client-card .client-money .money-info a,
+.client-card .client-profile .left-info p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #06061D;
+}
+/* // */
+.client-card .client-money .check {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.client-card .client-money .money-info a.money-link {
+	color: #0035BC;
+	text-decoration: none;
+}
+.client-card .client-money .money-info a.plus-btn {
+	margin-left: auto;
+	display: flex;
+}
+/* /// */
+.client-card .client-card-info {
+	margin-bottom: 0;
+}
+.client-card .client-card-info .info-group input {
+	background-image: url('../images/calendar-icon.svg');
+	background-position: center right 10px;
+	background-repeat: no-repeat;
+	margin-bottom: 8px;
+}
+.client-card .client-card-info .info-visitors {
+	border-top: none;
+}
+/* right card client */
+.client-card .card-comment p {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #06061D;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #DCE1E8;
+}
+.client-card .cardCom-block {
+	padding: 20px 15px 20px 25px;
+	border-bottom: 1px solid #DCE1E8;
+	position: relative;
+}
+.client-card .cardCom-block.two {
+	border-bottom: none;
+}
+.client-card .cardCom-block:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 1px;
+	height: 77%;
+	background: #DCE1E8;
+}
+.client-card .cardCom-block.two:after{
+	bottom: auto;
+	top: 0;
+	height: 28px;
+}
+.client-card .cardCom-block.in {
+	border: none;
+}
+.client-card .cardCom-block.in:after {
+	content: none;
+}
+/* // */
+.client-card .cardCom-block span.green-dot {
+	min-width: 12px;
+	height: 12px;
+	background: #23D51F;
+	position: absolute;
+	left: -6px;
+    top: 26px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.client-card .cardCom-block .card-mail a {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 8px;
+	color: #06061D;
+}
+.client-card .cardCom-block .card-text p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 12px;
+	color: #06061D;
+}
+.client-card .cardCom-block .card-last {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.client-card .cardCom-block .card-last a,
+.client-card .cardCom-block .card-last span {
+	font-size: 14px;
+	line-height: 20px;
+	color: #7E7F91;
+}
+.client-card .cardCom-block .card-last a {
+	text-decoration: none;
+}
+.client-card .cardCom-block .card-last a:hover {
+	color: #000;
+}
+.client-card .comment-place {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.client-card .comment-place textarea {
+	resize: none;
+	display: block;
+	width: 100%;
+	height: 80px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 2px rgba(0, 12, 54, 0.12);
+	border-radius: 4px;
+	border: none;
+	margin-bottom: 12px;
+	padding: 12px 16px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+}
+.client-card .comment-place textarea::placeholder {
+	font-size: 16px;
+	line-height: 24px;
+	color: #7E7F91;
+}
+.client-card .comment-place button {
+	font-family: 'IBM Plex Sans';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #FFFFFF;
+	padding: 16px 24px;
+}
+/*====================== Аналитика PARSER =========================*/
+.analytics-sec .parser-tab .top-right a {
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #FFFFFF;
+	padding: 12px 18px 12px 12px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+.analytics-sec .parser-tab .top-right a span {
+	display: flex;
+	align-items: center;
+	margin-right: 8px;
+}
+.analytics-sec .parser-table {
+	padding-left: 10px;
+}
+.analytics-sec .parser-table .table thead>tr>th,
+.analytics-sec .parser-table .table tbody>tr>td {
+	padding: 16px;
+}
+.analytics-sec .parser-table .table tbody tr td p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #06061D;
+}
+.analytics-sec .parser-table .table tbody tr td a {
+	font-size: 14px;
+	line-height: 20px;
+	color: #0035BC;
+}
+/* //// */
+.parser-modal .modal-dialog {
+	width: 564px;
+}
+.parser-modal .modal-header {
+	border: none;
+	padding: 32px 28px 24px;
+}
+.parser-modal .modal-body {
+	padding: 0 28px 28px;
+}
+.parser-modal .modal-body .form-group {
+	margin-bottom: 16px;
+}
+.parser-modal .modal-body .parser-region-btn {
+	width: 100%;
+}
+.parser-modal .modal-body .form-group.parser-region-btn button {
+	font-size: 16px;
+	line-height: 24px;
+	color: #7E7F91;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.parser-modal .modal-body .form-group.parser-region-btn.open button img {
+	transform: rotate(180deg);
+}
+.parser-modal .modal-body .form-group.parser-region-btn .dropdown-menu {
+	width: 100%;
+}
+.parser-modal .modal-body .parser-checks {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.parser-modal .modal-body .parser-checks p {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #06061D;
+}
+.parser-modal .modal-body .parser-checks .check {
+	margin: 0;
+}
+.parser-modal .modal-body .parser-btn {
+	text-align: right;
+	margin-top: 32px;
+}
+.parser-modal .modal-body .parser-btn button {
+	font-family: 'IBM Plex Sans';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #FFFFFF;
+	padding: 16px 52px;
+}
+/* История открепления сделок */
+.analytics-sec .unpinning-table {
+	padding-left: 10px;
+}
+.analytics-sec .unpinning-tab .tab-top .top-right .form-group {
+	margin-bottom: 0;
+}
+.analytics-sec .unpinning-tab .tab-top .top-right .form-group input {
+	height: 48px;
+    width: 600px;
+	padding: 14px 18px 14px 52px;
+    background: white url("../images/search-icon.svg") 18px 12px no-repeat;
+	border: 1px solid #DCE1E8;
+	border-radius: 4px;
+}
+.analytics-sec .unpinning-tab .tab-top .top-right .form-group input:hover,
+.analytics-sec .unpinning-tab .tab-top .top-right .form-group input:focus {
+	border-color: #1ECBBD;
+}
+.analytics-sec .unpinning-table .table tbody tr td {
+	padding: 16px;
+}
+.analytics-sec .unpinning-table .table tbody tr td p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #06061D;
+}
 
 /* ================ End Аналитика page ================= */
 /* ================ Custom Input checkbox Switch ================= */
@@ -2534,6 +2950,26 @@ audio::-webkit-media-controls-play-button:hover {
 }
 
 @media only screen and (max-width: 768px){
+	.back-block {
+		padding: 0 30px;
+	}
+	.client-card .right-col {
+		padding: 0 30px;
+		margin-top: 50px;
+	}
+	.wrapper.show.client-card,
+	.client-card {
+		padding: 0;
+	}
+	.analytics-sec .unpinning-tab .tab-top {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.analytics-sec .unpinning-tab .tab-top .secondary-title {
+		margin-bottom: 16px;
+	}
+	/* //////// */
 	.analytics-sec .an-report {
 		flex-direction: column;
 		align-items: flex-end;
@@ -2665,6 +3101,50 @@ audio::-webkit-media-controls-play-button:hover {
 
 
 @media only screen and (max-width: 480px){
+	.analytics-sec .unpinning-tab .tab-top .top-right .form-group,
+	.analytics-sec .unpinning-tab .tab-top .top-right .form-group input {
+		width: 100%;
+	}
+	.analytics-sec .unpinning-tab .tab-top .secondary-title {
+		margin-bottom: 0;
+	}
+	.analytics-sec .tab-content .parser-tab .tab-top .top-right {
+		width: auto;
+	}
+	.analytics-sec .tab-content .parser-tab .tab-top {
+		flex-direction: row;
+		align-items: end;
+		justify-content: space-between;
+	}
+	.analytics-sec .an-form {
+		width: 100%;
+	}
+	.wrapper.show .client-card {
+		padding: 0;
+	}
+	.client-card .client-card-info .info-info span,
+	.client-card .client-money .money-info span,
+	.client-card .client-profile .left-info span {
+		min-width: 175px;
+	}
+	.domen-sec .domen-body .form-group.sendPixel button {
+		font-size: 14px;
+	}
+	.domen-sec .form-group {
+		margin-bottom: 16px;
+	}
+	.domen-sec .domen-ftr {
+		padding: 16px 16px 8px;
+	}
+	.domen-sec .domen-region,
+	.domen-sec .domen-body,
+	.domen-sec .domen-head {
+		padding: 16px;
+	}
+	.domen-sec .domen-top h1, .profile-sec .profile-top h1 {
+		font-size: 30px;
+		line-height: 34px;
+	}
 	.analytics-sec .an-report {
 		padding: 16px;
 	}
@@ -3001,10 +3481,17 @@ audio::-webkit-media-controls-play-button:hover {
 		color: #23D51F;
 	}
 	.crm-pagninton .crm-pagninton-left ul {
-		margin: 12px 20px;
+		margin: 12px 5px;
 		justify-content: space-between;
 		width: 100%;
 		flex-wrap: wrap;
+	}
+	.crm-pagninton .crm-pagninton-right,
+	.crm-pagninton .crm-pagninton-left .page-item.pc {
+		display: none;
+	}
+	.crm-pagninton {
+		justify-content: center;
 	}
 }
 
